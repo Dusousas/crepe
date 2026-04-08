@@ -137,7 +137,7 @@ export default function Hero() {
         <div className="pointer-events-none absolute left-[1%] bottom-[8%] z-20 hidden lg:block">
           <div className="absolute left-[18%] top-[14%] h-[12rem] w-[12rem] rounded-full bg-[#F5C3D3]/40 blur-3xl" />
 
-          <div
+          {/* <div
             ref={deckRef}
             className="relative h-[22rem] w-[17rem] lg:h-[26rem] lg:w-[19rem]"
           >
@@ -161,7 +161,7 @@ export default function Hero() {
                 </div>
               </div>
             ))}
-          </div>
+          </div> */}
         </div>
 
         <article className="relative flex h-full items-center justify-center">
