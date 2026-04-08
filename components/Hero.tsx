@@ -166,16 +166,16 @@ export default function Hero() {
 
         <article className="relative flex h-full items-center justify-center">
           <div className="absolute inset-x-0 top-40 text-center font-anton uppercase leading-[1] tracking-[-0.05em]">
-            <h1 className="text-[clamp(5rem,14vw,13rem)] text-[#F25394]/30">
+            <h1 className="text-[clamp(4rem,14vw,13rem)] text-[#F25394]/30">
               Sabor que vai
             </h1>
 
-            <h1 className="relative -mt-[0.02em] text-[clamp(5rem,14vw,13rem)] text-[#F25394]">
+            <h1 className="relative -mt-[0.02em] text-[clamp(4rem,14vw,13rem)] text-[#F25394]">
               até você!
             </h1>
 
             <h1
-              className="absolute bottom-0 z-20 mx-auto w-full text-[clamp(5rem,14vw,13rem)] text-transparent"
+              className="absolute bottom-0 z-20 mx-auto w-full text-[clamp(4rem,14vw,13rem)] text-transparent"
               style={{
                 WebkitTextStroke: "2px #F25394",
               }}
@@ -184,7 +184,7 @@ export default function Hero() {
             </h1>
           </div>
 
-          <div className="absolute left-1/2 top-[70%] w-[min(84vw,48rem)] -translate-x-1/2 -translate-y-1/2 md:left-[58%]">
+          <div className="absolute left-1/2 w-[min(84vw,48rem)] -translate-x-1/2 -translate-y-1/2 md:left-[58%] top-[70%]">
             <div className="relative">
               <Image
                 src="/hero-1.png"
@@ -201,7 +201,7 @@ export default function Hero() {
                 width={960}
                 height={960}
                 priority
-                className="absolute bottom-0 -left-10 h-auto w-[200px]"
+                className="absolute bottom-0 h-auto w-[90px] lg:w-[200px] lg:-left-10"
               />
             </div>
           </div>

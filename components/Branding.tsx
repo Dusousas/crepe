@@ -90,7 +90,7 @@ export default function Branding() {
     <section
       ref={sectionRef}
       id="eventos"
-      className="relative scroll-mt-28 overflow-hidden bg-[#FCE8EC] py-16 md:pt-10 md:pb-18"
+      className="relative scroll-mt-28 overflow-hidden bg-[#FCE8EC] py-16 md:pt-10 md:pb-20"
     >
       <div className="mx-auto max-w-[1600px] px-6 md:px-10">
         <article className="relative min-h-[50vh]">

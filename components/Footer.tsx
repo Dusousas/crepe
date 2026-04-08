@@ -26,7 +26,7 @@ export default function Footer() {
   return (
     <footer className="border-t border-[#f3dce5] bg-[#fff8fa] text-[#6f4e59] py-4">
       <div className="maxW">
-        <div className="flex justify-between">
+        <div className="flex flex-col justify-center items-center lg:flex-row lg:justify-between">
           <div className="flex max-w-[22rem] flex-col gap-8">
             <Link href="/" className="inline-flex items-center">
               <Image
