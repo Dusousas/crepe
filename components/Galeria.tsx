@@ -52,8 +52,6 @@ const repeatedGallery = [...galleryItems, ...galleryItems];
 export default function Galeria() {
   return (
     <section id="galeria" className="scroll-mt-28 overflow-hidden bg-white">
-
-
       <div className="mt-12 overflow-hidden pb-20">
         <div className="gallery-marquee flex items-center gap-4 md:gap-5">
           {repeatedGallery.map((item, index) => (

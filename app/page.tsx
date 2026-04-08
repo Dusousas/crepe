@@ -1,6 +1,5 @@
 import Branding from "@/components/Branding";
 import Cardapio from "@/components/Cardapio";
-import Events from "@/components/Events";
 import Galeria from "@/components/Galeria";
 import Hero from "@/components/Hero";
 import Info from "@/components/Info";
@@ -14,7 +13,6 @@ export default function Home() {
       <Hero />
       <Cardapio />
       <Services />
-      <Events />
       <Branding />
       <Testimonials />
       <Galeria />

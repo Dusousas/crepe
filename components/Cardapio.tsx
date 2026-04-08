@@ -4,12 +4,12 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 
 const products = [
-  { id: 1, name: "Crepe Classico", image: "/1.png" },
-  { id: 2, name: "Crepe Frango", image: "/1.png" },
-  { id: 3, name: "Crepe Calabresa", image: "/1.png" },
-  { id: 4, name: "Crepe Quatro Queijos", image: "/1.png" },
-  { id: 5, name: "Crepe Chocolate", image: "/1.png" },
-  { id: 6, name: "Crepe Especial", image: "/1.png" },
+  { id: 1, name: "Crepe Classico", image: "/crepe1.png" },
+  { id: 2, name: "Crepe Frango", image: "/crepe2.png" },
+  { id: 3, name: "Crepe Calabresa", image: "/crepe1.png" },
+  { id: 4, name: "Crepe Quatro Queijos", image: "/crepe2.png" },
+  { id: 5, name: "Crepe Chocolate", image: "/crepe1.png" },
+  { id: 6, name: "Crepe Especial", image: "/crepe2.png" },
 ];
 
 function getVisibleCards(width: number) {
@@ -115,18 +115,18 @@ export default function Cardapio() {
                 className="group flex shrink-0 flex-col border-r border-dashed border-[#D95C71] px-5 py-8 last:border-r-0 md:px-8 md:py-10"
                 style={{ width: `${100 / visibleCards}%` }}
               >
-                <div className="relative flex min-h-[18rem] items-center justify-center overflow-hidden md:min-h-[24rem]">
+                <div className="relative flex justify-center items-center h-[300px]">
                   <Image
                     src={product.image}
                     alt={product.name}
                     width={430}
                     height={430}
-                    className="h-auto w-full max-w-[22rem] object-contain transition-transform duration-500 ease-out group-hover:scale-110"
+                    className="h-auto w-full max-w-[200px] object-contain transition-transform duration-500 ease-out group-hover:scale-110"
                   />
                 </div>
 
                 <div className="flex min-h-[4.5rem] flex-col justify-end">
-                  <h3 className="font-anton text-[clamp(1.8rem,3vw,2.8rem)] uppercase leading-none text-[#131313]">
+                  <h3 className="font-anton text-[clamp(1.8rem,3vw,2.8rem)] text-center uppercase leading-none text-[#131313]">
                     {product.name}
                   </h3>
                 </div>

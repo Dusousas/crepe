@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { FaFacebookF, FaInstagram, FaTiktok } from "react-icons/fa";
 import { RiThreadsLine } from "react-icons/ri";
@@ -23,12 +24,18 @@ const secondaryLinks = [
 
 export default function Footer() {
   return (
-    <footer className="border-t border-[#f3dce5] bg-[#fff8fa] text-[#6f4e59]">
-      <div className="maxW py-14 md:py-16">
-        <div className="grid gap-12 md:grid-cols-2 xl:grid-cols-[1.25fr_0.8fr_0.8fr_1fr] xl:gap-10">
+    <footer className="border-t border-[#f3dce5] bg-[#fff8fa] text-[#6f4e59] py-4">
+      <div className="maxW">
+        <div className="flex justify-between">
           <div className="flex max-w-[22rem] flex-col gap-8">
             <Link href="/" className="inline-flex items-center">
-              <img className="w-[210px]" src="/logo.png" alt="" />
+              <Image
+                className="h-auto w-[210px]"
+                src="/logo.png"
+                alt="Crepearia"
+                width={978}
+                height={526}
+              />
             </Link>
 
             <div className="flex flex-wrap items-center gap-5 text-[#8b6b75]">
@@ -45,41 +52,6 @@ export default function Footer() {
             </div>
           </div>
 
-          <div>
-            <h3 className="mb-5 font-anton text-[clamp(1.6rem,2vw,2rem)] uppercase leading-none text-[#2f1c24]">
-              Navegacao
-            </h3>
-
-            <nav className="flex flex-col gap-4 text-[17px]">
-              {primaryLinks.map((item) => (
-                <Link
-                  key={item.href}
-                  href={item.href}
-                  className="transition hover:text-[#b63149]"
-                >
-                  {item.label}
-                </Link>
-              ))}
-            </nav>
-          </div>
-
-          <div>
-            <h3 className="mb-5 font-anton text-[clamp(1.6rem,2vw,2rem)] uppercase leading-none text-[#2f1c24]">
-              Explore
-            </h3>
-
-            <nav className="flex flex-col gap-4 text-[17px]">
-              {secondaryLinks.map((item) => (
-                <Link
-                  key={item.href}
-                  href={item.href}
-                  className="transition hover:text-[#b63149]"
-                >
-                  {item.label}
-                </Link>
-              ))}
-            </nav>
-          </div>
 
           <div className="flex flex-col gap-8">
             <div>

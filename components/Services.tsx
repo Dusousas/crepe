@@ -97,7 +97,7 @@ export default function Services() {
                 </div>
 
                 <div className="mt-12 flex-1">
-                  <h3 className=" font-anton text-4xl  uppercase leading-[0.95] text-[#111111]">
+                  <h3 className="font-anton text-4xl uppercase leading-[0.95] text-[#111111]">
                     {service.title}
                   </h3>
                   <p className="mt-5 max-w-[34ch] font-body text-[1.02rem] leading-8 text-[#5F4C52]">
@@ -108,7 +108,7 @@ export default function Services() {
                 <div className="mt-8 pt-2">
                   <button
                     type="button"
-                    className="inline-flex items-center cursor-pointer gap-3 rounded-[1rem] bg-[#B63149] px-5 py-3 font-body text-sm font-semibold uppercase tracking-[0.12em] text-white transition duration-300 group-hover:bg-[#97263c]"
+                    className="inline-flex cursor-pointer items-center gap-3 rounded-[1rem] bg-[#B63149] px-5 py-3 font-body text-sm font-semibold uppercase tracking-[0.12em] text-white transition duration-300 group-hover:bg-[#97263c]"
                   >
                     {service.cta}
                     <span className="transition duration-300 group-hover:translate-x-1">

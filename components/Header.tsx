@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import Navbar from "./subc/Navbar";
 
@@ -21,7 +22,14 @@ export default function Header() {
         <div className="maxW flex items-center justify-between gap-4">
           <div className="flex flex-1">
             <Link href="/#inicio" className="header-brand inline-flex items-center">
-              <img className="w-[160px]" src="/logo.png" alt="Crepearia" />
+              <Image
+                className="h-auto w-[160px]"
+                src="/logo.png"
+                alt="Crepearia"
+                width={978}
+                height={526}
+                priority
+              />
             </Link>
           </div>
 

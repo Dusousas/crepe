@@ -81,8 +81,6 @@ export default function Testimonials() {
         </div>
 
         <div className="relative mt-12">
-
-
           <div className="overflow-hidden">
             <div
               className="flex transition-transform duration-500 ease-out"
@@ -108,10 +106,10 @@ export default function Testimonials() {
                     {pageItems.map((item) => (
                       <article
                         key={item.id}
-                        className="flex min-h-[20rem] flex-col rounded-[1.5rem] border border-[#EDE7E8] px-8 py-8 transition duration-300 hover:-translate-y-1  md:px-9 md:py-9"
+                        className="flex min-h-[20rem] flex-col rounded-[1.5rem] border border-[#EDE7E8] px-8 py-8 transition duration-300 hover:-translate-y-1 md:px-9 md:py-9"
                       >
                         <p className="mt-12 flex-1 font-body text-[1.05rem] leading-9 text-[#1E1E1E] md:text-[1.12rem]">
-                          “{item.quote}”
+                          &quot;{item.quote}&quot;
                         </p>
 
                         <div className="mt-10 flex items-center gap-4">
@@ -149,8 +147,6 @@ export default function Testimonials() {
               })}
             </div>
           </div>
-
-
         </div>
 
         <div className="mt-8 flex items-center justify-center gap-2">

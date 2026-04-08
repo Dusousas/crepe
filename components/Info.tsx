@@ -1,24 +1,26 @@
 "use client";
 
-
 const schedule = [
   "SEG - TER : FECHADO",
   "QUA - SEX : 16H - 22H",
   "SAB - DOM : 12H - 22H",
 ];
 
-const marqueeItems = [
+const footerMarquee = [
   "CREPEARIA",
-  "CREPEARIA",
-  "CREPEARIA",
-  "CREPEARIA",
-  "CREPEARIA",
-  "CREPEARIA",
+  "HOTDOGS",
+  "CHURROS",
+  "SUCOS",
+  "SALGADOS",
+  "DOCES",
 ];
 
 export default function Info() {
   return (
-    <section id="contato" className="scroll-mt-28 bgEvents overflow-hidden pt-10 pb-5">
+    <section
+      id="contato"
+      className="scroll-mt-28 overflow-hidden bgEvents pt-10 pb-5"
+    >
       <div className="maxW">
         <article className="mx-auto rounded-[22px] bg-white p-6 shadow-sm lg:max-w-[950px] lg:p-10">
           <h2 className="text-center font-anton text-[clamp(2.4rem,5vw,3.5rem)] uppercase leading-[0.95] text-[#161616]">
@@ -39,8 +41,8 @@ export default function Info() {
       </div>
 
       <div className="mt-10 overflow-hidden">
-        <div className="flex w-max animate-[marquee_18s_linear_infinite] gap-6">
-          {[...marqueeItems, ...marqueeItems].map((item, index) => (
+        <div className="flex w-max animate-[marquee_20s_linear_infinite] gap-6">
+          {[...footerMarquee, ...footerMarquee].map((item, index) => (
             <h2
               key={index}
               className="shrink-0 text-7xl font-anton tracking-wider text-white/80 md:text-8xl lg:text-9xl"
