@@ -5,45 +5,45 @@ import Image from "next/image";
 const galleryItems = [
   {
     id: 1,
-    src: "/galeria.jpg",
-    alt: "Clientes aproveitando a experiência gastronômica",
-    width: "w-[12rem] md:w-[14rem]",
-    position: "object-[18%_center]",
+    src: "/galeria/1.jpg",
+    alt: "Foto da galeria 1",
+    position: "object-center",
   },
   {
     id: 2,
-    src: "/img1.jpg",
-    alt: "Atendimento ao vivo em evento especial",
-    width: "w-[18rem] md:w-[20rem]",
-    position: "object-[42%_center]",
+    src: "/galeria/2.jpg",
+    alt: "Foto da galeria 2",
+    position: "object-center",
   },
   {
     id: 3,
-    src: "/galeria.jpg",
-    alt: "Momento descontraído com comida servida na hora",
-    width: "w-[15rem] md:w-[17rem]",
-    position: "object-[72%_center]",
+    src: "/galeria/3.jpg",
+    alt: "Foto da galeria 3",
+    position: "object-center",
   },
   {
     id: 4,
-    src: "/1.png",
-    alt: "Produto em destaque do cardápio",
-    width: "w-[18rem] md:w-[20rem]",
-    product: true,
+    src: "/galeria/4.jpg",
+    alt: "Foto da galeria 4",
+    position: "object-center",
   },
   {
     id: 5,
-    src: "/img1.jpg",
-    alt: "Equipe servindo em evento",
-    width: "w-[15rem] md:w-[17rem]",
-    position: "object-[60%_center]",
+    src: "/galeria/5.jpg",
+    alt: "Foto da galeria 5",
+    position: "object-center",
   },
   {
     id: 6,
-    src: "/galeria.jpg",
-    alt: "Convidados curtindo a experiência",
-    width: "w-[18rem] md:w-[20rem]",
-    position: "object-[34%_center]",
+    src: "/galeria/6.jpg",
+    alt: "Foto da galeria 6",
+    position: "object-center",
+  },
+  {
+    id: 7,
+    src: "/galeria/7.jpeg",
+    alt: "Foto da galeria 7",
+    position: "object-center",
   },
 ];
 
@@ -57,30 +57,16 @@ export default function Galeria() {
           {repeatedGallery.map((item, index) => (
             <article
               key={`${item.id}-${index}`}
-              className={`${item.width} group relative h-[13.5rem] shrink-0 overflow-hidden rounded-[1.25rem] border border-[#EFE5E7] bg-[#FDEDF0] shadow-[0_10px_30px_rgba(17,17,17,0.05)] transition duration-500 hover:-translate-y-1 hover:shadow-[0_18px_34px_rgba(17,17,17,0.08)] md:h-[15rem]`}
+              className="group relative h-[13.5rem] w-[16rem] shrink-0 overflow-hidden rounded-[1.25rem] border border-[#EFE5E7] bg-[#FDEDF0] shadow-[0_10px_30px_rgba(17,17,17,0.05)] transition duration-500 hover:-translate-y-1 hover:shadow-[0_18px_34px_rgba(17,17,17,0.08)] md:h-[15rem] md:w-[18rem]"
             >
-              {item.product ? (
-                <div className="relative flex h-full items-center justify-center bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.95),rgba(253,237,240,1)_60%)] p-6">
-                  <Image
-                    src={item.src}
-                    alt={item.alt}
-                    width={430}
-                    height={430}
-                    className="h-auto w-full max-w-[11rem] object-contain transition duration-500 group-hover:scale-110"
-                  />
-                </div>
-              ) : (
-                <>
-                  <Image
-                    src={item.src}
-                    alt={item.alt}
-                    fill
-                    sizes="(max-width: 768px) 50vw, 20rem"
-                    className={`object-cover ${item.position ?? "object-center"} transition duration-700 group-hover:scale-105`}
-                  />
-                  <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(0,0,0,0.04),rgba(0,0,0,0.18))]" />
-                </>
-              )}
+              <Image
+                src={item.src}
+                alt={item.alt}
+                fill
+                sizes="(max-width: 768px) 50vw, 20rem"
+                className={`object-cover ${item.position} transition duration-700 group-hover:scale-105`}
+              />
+              <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(0,0,0,0.04),rgba(0,0,0,0.18))]" />
             </article>
           ))}
         </div>

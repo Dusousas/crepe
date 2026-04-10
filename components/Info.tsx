@@ -19,9 +19,12 @@ export default function Info() {
   return (
     <section
       id="contato"
-      className="scroll-mt-28 overflow-hidden bgEvents pt-10 pb-5"
+      className="relative scroll-mt-28 overflow-hidden bgEvents pt-10 pb-5"
     >
-      <div className="maxW">
+      {/* OVERLAY */}
+      <div className="absolute inset-0 bg-black/50 pointer-events-none z-0" />
+
+      <div className="relative z-10 maxW">
         <article className="mx-auto rounded-[22px] bg-white p-6 shadow-sm lg:max-w-[950px] lg:p-10">
           <h2 className="text-center font-anton text-[clamp(2.4rem,5vw,3.5rem)] uppercase leading-[0.95] text-[#161616]">
             Comida boa. Ambiente leve. Atendimento ágil.
@@ -37,10 +40,18 @@ export default function Info() {
               </p>
             ))}
           </div>
+          <div className="mt-4">
+            <p className="font-anton text-sm uppercase tracking-[0.18em] text-center text-[#161616]">
+              Endereço:
+            </p>
+            <p className="uppercase font-semibold text-[14px] text-center font-body leading-7 text-[#4A353B]">
+              Rua Senador Lacerda Franco, 482 - Torrinha - SP
+            </p>
+          </div>
         </article>
       </div>
 
-      <div className="mt-10 overflow-hidden">
+      <div className="relative z-10 mt-10 overflow-hidden">
         <div className="flex w-max animate-[marquee_20s_linear_infinite] gap-6">
           {[...footerMarquee, ...footerMarquee].map((item, index) => (
             <h2
